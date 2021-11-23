@@ -1,0 +1,6 @@
+select 
+product_pk, 
+product_name{additional_attributes} 
+from `trax-cpg-dwh-int.prod.product_dim` 
+where project_name = '{project_name}' 
+{product_version_query}
